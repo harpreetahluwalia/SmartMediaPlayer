@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/color_white" />
+    <item
+        android:height="150sp"
+        android:width="150sp"
+        android:drawable="@drawable/logo_harasis"
+        android:gravity="center">
+    </item>
+</layer-list>
