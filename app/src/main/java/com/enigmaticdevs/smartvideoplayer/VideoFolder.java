@@ -23,6 +23,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import androidx.core.text.HtmlCompat;
+
 public class VideoFolder extends AppCompatActivity {
 
     Adapter_VideoFolder obj_adapter;
@@ -36,7 +38,7 @@ public class VideoFolder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_videofolder);
-        getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Smart Video Player </font>"));
+        getSupportActionBar().setTitle(HtmlCompat.fromHtml("<font color='#ffffff'>Smart Video Player </font>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
         getWindow().setStatusBarColor(Color.parseColor("#0086DF"));
 
